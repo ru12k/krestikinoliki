@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100%;
+    min-height: 800px;
+}
+
+.wrapper-game-list {
+    width: 25%;
+    background-color: #e1d3c3;
+    position: relative;
+}
+
+.wrapper-game-field {
+    width: 75%;
+
+    background-color: #afb0b2;
+}
+
+.message-field {
+    padding: 40px;
+    color: #e1d3c3;
+}
+.wrapper-title {
+    height: 100px;
+    background-color: #7c8690;
+    margin-top: 0;
+}
+
+.wrapper-title h1 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    line-height: 100px;
+    margin: auto;
+    width: 300px;
+    display: block;
+    font-size: 1.5em;
+    color: #e1d3c3;
+}
+.list-title {
+    height: 100px;
+    background-color: #afb0b2;
+    margin-top: 0;
+    padding-left: 40px;
+}
+
+.list-title h3 {
+    margin-top: 0;
+    color: #e1d3c3;
+    line-height: 100px;
+
+}
+
+.games-list {
+    list-style-type: none;
+    display: block;
+    margin-left: 0;
+    padding: 0;
+}
+
+.games-list li {
+    background-color: #8b3517;
+    color: #e1d3c3;
+    margin: 5px auto 0 auto;
+    padding: 10px 10px 10px 40px;
+}
+
+.games-list li:hover {
+    background-color: #18230d;
+    color: #afb0b2
+}
+
+.game-field {
+    margin: 0 auto 0 auto;
+    outline: #e1d3c3 solid 2px;
+    display: none;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    padding: 0;
+}
+
+.game-field div {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 50px;
+    color: #e1d3c3;
+    outline: #e1d3c3 solid 1px;
+    width: 50px;
+    height: 50px;
+}
+
+.game-field div[data-isturn = false]:hover {
+    background-color: #e1d3c3;
+}
+
+.create-btn {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    padding: 20px;
+    background-color: #8b3517;
+    color: #e1d3c3;
+    border: none;
+}
+
+.create-btn[disabled], .create-btn[disabled]:hover {
+    background-color: #7c8690;
+    color: #afb0b2
+}
+
+.create-btn:hover {
+    background-color: #18230d;
+    color: #afb0b2
+}
+
+.hidden {
+    display: none;
+}
